@@ -7,6 +7,7 @@ class Manager(object):
 
     def __init__(self, filepath):
         self.filepath = filepath
+        self.read_spd()
 
 	def read_spd(self):
 		filepath = os.path.expanduser('~/projects/ch1_sea_dl_speeds/data/'+self.filepath)
